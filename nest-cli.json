@@ -1,4 +1,30 @@
 {
   "collection": "@nestjs/schematics",
-  "sourceRoot": "src"
+  "sourceRoot": "apps/camera-server/src",
+  "monorepo": true,
+  "root": "apps/camera-server",
+  "compilerOptions": {
+    "webpack": true,
+    "tsConfigPath": "apps/camera-server/tsconfig.app.json"
+  },
+  "projects": {
+    "camera-server": {
+      "type": "application",
+      "root": "apps/camera-server",
+      "entryFile": "main",
+      "sourceRoot": "apps/camera-server/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/camera-server/tsconfig.app.json"
+      }
+    },
+    "view": {
+      "type": "application",
+      "root": "apps/view",
+      "entryFile": "main",
+      "sourceRoot": "apps/view/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/view/tsconfig.app.json"
+      }
+    }
+  }
 }

@@ -28,6 +28,8 @@
 
 This is a test repository meant to work with https://github.com/spectacularGavin/rasp-sec-camera
 
+Following tutorial from https://github.com/thisismydesign/nestjs-starter
+
 ## Installation
 
 ```bash

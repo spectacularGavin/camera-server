@@ -26,12 +26,15 @@
     "@nestjs/config": "^1.0.1",
     "@nestjs/core": "^8.0.0",
     "@nestjs/platform-express": "^8.0.0",
+    "@nestjs/platform-ws": "^8.0.6",
+    "@nestjs/websockets": "^8.0.6",
     "next": "^11.1.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.2",
-    "rxjs": "^7.2.0"
+    "rxjs": "^7.2.0",
+    "ws": "^8.2.2"
   },
   "devDependencies": {
     "@nestjs/cli": "^8.0.0",
@@ -43,6 +46,7 @@
     "@types/react": "^17.0.20",
     "@types/react-dom": "^17.0.9",
     "@types/supertest": "^2.0.11",
+    "@types/ws": "^7.4.7",
     "@typescript-eslint/eslint-plugin": "^4.28.2",
     "@typescript-eslint/parser": "^4.28.2",
     "eslint": "^7.30.0",

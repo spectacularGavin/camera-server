@@ -1,9 +1,11 @@
 import { Module } from '@nestjs/common';
+import { ConfigModule, ConfigService } from '@nestjs/config';
 import { ViewController } from './view.controller';
 import { ViewService } from './view.service';
 
 @Module({
-  imports: [],
+  imports: [ConfigModule.forRoot({
+  })],
   controllers: [ViewController],
   providers: [ViewService],
 })

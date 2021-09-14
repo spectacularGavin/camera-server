@@ -21,7 +21,6 @@ export class ViewController {
   public async showHome(@Req() req: Request, @Res() res: Response) {
     const parsedUrl = parse(req.url, true);
     const serverSideProps = { dataFromController: '123' };
-
     await this.viewService
       .getNextServer()
       .render(
